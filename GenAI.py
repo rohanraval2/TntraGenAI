@@ -1,12 +1,12 @@
 from openai import OpenAI
 from transformers import pipeline
 
-api_key = "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"
+api_key = "your-OpenAI-api-key"
 client = OpenAI(api_key=api_key)
 
 import google.generativeai as genai
 import os
-os.environ['GOOGLE_API_KEY'] = "AIzaSyCVDhetEqcaFlCpNhTLQNlTkdIJTJeddUk"
+os.environ['GOOGLE_API_KEY'] = "your-Gemini-api-key"
 genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
 model = genai.GenerativeModel('gemini-pro')
 
